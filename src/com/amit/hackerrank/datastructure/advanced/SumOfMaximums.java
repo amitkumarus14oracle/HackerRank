@@ -15,6 +15,7 @@ public class SumOfMaximums {
         String[] sizes = first.split(" ");
         int a[] = new int[Integer.parseInt(sizes[0])];
         int queriesSize = Integer.parseInt(sizes[1]);
+        
         String arrayLine = sc.nextLine();
         String[] arrayLineValues = arrayLine.split(" ");
         for(int i=0;i<a.length;i++) {
