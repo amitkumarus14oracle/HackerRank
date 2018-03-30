@@ -34,8 +34,8 @@ public class SumOfMaximums {
     public static void main(String[] args) {
         /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
         Scanner sc = new Scanner(System.in);
-        String first = sc.nextLine();
-        String[] sizes = first.split(" ");
+        String firstLine = sc.nextLine();
+        String[] sizes = firstLine.split(" ");
         int a[] = new int[Integer.parseInt(sizes[0])];
         int queriesSize = Integer.parseInt(sizes[1]);
         String arrayLine = sc.nextLine();
