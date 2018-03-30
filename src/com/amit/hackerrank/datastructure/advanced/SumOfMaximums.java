@@ -6,6 +6,29 @@ import java.text.*;
 import java.math.*;
 import java.util.regex.*;
 
+/*
+ * Alexey is playing with an array, , of  integers. His friend, Ivan, asks him to calculate the sum of the maximum values for all subsegments of . More formally, he wants Alexey to find .
+
+Alexey solved Ivan's challenge faster than expected, so Ivan decides to add another layer of difficulty by having Alexey answer  queries. The  query contains subsegment , and he must calculate the sum of maximum values on all subsegments inside subsegment .
+
+More formally, for each query , Alexey must calculate the following function:
+
+.
+
+Can you help Alexey solve this problem?
+
+Input Format
+
+The first line contains  space-separated positive integers,  (the length of array ) and  (number of queries), respectively. 
+The second line contains  space-separated integers,  describing each element  (where ) in array . 
+Each of the  subsequent lines contains  space-separated positive integers describing the respective values for and  in query  (where ).
+
+Constraints
+
+Output Format
+
+For each query  (where ), print its answer on a new line.*/
+
 public class SumOfMaximums {
 
     public static void main(String[] args) {
@@ -15,7 +38,6 @@ public class SumOfMaximums {
         String[] sizes = first.split(" ");
         int a[] = new int[Integer.parseInt(sizes[0])];
         int queriesSize = Integer.parseInt(sizes[1]);
-        
         String arrayLine = sc.nextLine();
         String[] arrayLineValues = arrayLine.split(" ");
         for(int i=0;i<a.length;i++) {
